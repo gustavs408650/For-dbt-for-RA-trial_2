@@ -7,6 +7,6 @@ sources:
     database: bigquery-public-data 
     # database is project in BigQuery
     tables:
-      - name: stackoverflow_posts
+      - name: posts_questions
       - name: users
       - name: tags

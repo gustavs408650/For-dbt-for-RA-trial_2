@@ -1,6 +1,6 @@
 with source as (
     
-    select * from {{ source('bigquery_sample_questions', 'stackoverflow_posts') }}
+    select * from {{ source('bigquery_sample_questions', 'posts_questions') }}
     
 ),
 
