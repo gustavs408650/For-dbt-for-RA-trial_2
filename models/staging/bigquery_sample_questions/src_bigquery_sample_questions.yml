@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bigquery_sample_questions
+    schema: stackoverflow
+    # schema is dataset in BigQuery
+    database: bigquery-public-data 
+    # database is project in BigQuery
+    tables:
+      - name: stackoverflow_posts
+      - name: users
+      - name: tags

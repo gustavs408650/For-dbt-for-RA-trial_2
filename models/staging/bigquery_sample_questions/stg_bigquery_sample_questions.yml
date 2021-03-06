@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_bigquery_sample_questions_posts
+    columns:
+      - name: question_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_bigquery_sample_questions_users
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_bigquery_sample_questions_tags
+    columns:
+      - name: tag_id
+        tests:
+          - unique
+          - not_null

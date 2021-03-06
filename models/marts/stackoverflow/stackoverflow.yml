@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: fct_question_events
+    columns:
+      - name: question_id
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        tests:
+          - not_null
+  - name: dim_questions
+    columns:
+      - name: question_id
+        tests:
+          - unique
+          - not_null
+  - name: dim_users
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+  - name: dim_tag_group
+    columns:
+      - name: tag_group_key
+        tests:
+          - unique
+          - not_null
+  - name: br_tag_group
+    columns:
+      - name: tag_group_key
+        tests:
+          - not_null          
+      - name: tag_id
+        tests:
+          - unique
+          - not_null           
+  - name: dim_tag
+    columns:        
+      - name: tag_id
+        tests:
+          - unique
+          - not_null  
